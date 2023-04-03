@@ -9,5 +9,30 @@ export default ({
   isIconFontisto,
   isIconIonicons,
 }) => {
-  return <TouchableOpacity onPress={onPress}>{isIconFontis}</TouchableOpacity>;
+  return (
+    <TouchableOpacity
+      onPress={onPress}
+      style={{
+        justifyContent: "center",
+        alignItems: "center",
+        flex: 1,
+        paddingVertical: 10,
+      }}
+    >
+      {isIconFontisto && (
+        <Fontisto
+          name={isSelected ? activeIconName : inactiveIconName}
+          size={24}
+          color="black"
+        />
+      )}
+      {isIconIonicons && (
+        <Ionicons
+          name={isSelected ? activeIconName : inactiveIconName}
+          size={24}
+          color="blck"
+        />
+      )}
+    </TouchableOpacity>
+  );
 };
