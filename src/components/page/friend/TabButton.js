@@ -30,7 +30,7 @@ export default ({
         <Ionicons
           name={isSelected ? activeIconName : inactiveIconName}
           size={24}
-          color="blck"
+          color="black"
         />
       )}
     </TouchableOpacity>

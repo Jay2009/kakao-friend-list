@@ -6,9 +6,9 @@ export default ({ selectedTabIdx, setSelectedTabIdx }) => {
     <View
       style={{
         width: "100%",
-
-        backgroundColor: "lightblue",
         flexDirection: "row",
+        borderTopWidth: 0.5,
+        borderTopColor: "grey",
       }}
     >
       <TabButton
