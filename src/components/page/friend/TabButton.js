@@ -11,6 +11,7 @@ export default ({
 }) => {
   return (
     <TouchableOpacity
+      hitSlop={{ top: 10, bottom: 10 }}
       onPress={onPress}
       style={{
         justifyContent: "center",
