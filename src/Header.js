@@ -1,9 +1,8 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { StatusBar } from "react-native";
-import TopMenu from "./components/page/friend/TopMenu";
+import { Text, TouchableOpacity, View } from "react-native";
+import TopIconButton from "./components/page/friend/TopIconButton";
 
-export default () => {
+const Header = () => {
   return (
     <View
       style={{
@@ -13,12 +12,15 @@ export default () => {
       }}
     >
       <Text style={{ fontSize: 22, fontWeight: "bold" }}>친구</Text>
+
       <View style={{ flexDirection: "row" }}>
-        <TopMenu name="search-outline" />
-        <TopMenu name="person-add-outline" />
-        <TopMenu name="md-musical-notes-outline" />
-        <TopMenu name="ios-settings-outline" />
+        <TopIconButton name="search-outline" />
+        <TopIconButton name="person-add-outline" />
+        <TopIconButton name="md-musical-notes-outline" />
+        <TopIconButton name="ios-settings-outline" />
       </View>
     </View>
   );
 };
+
+export default Header;
